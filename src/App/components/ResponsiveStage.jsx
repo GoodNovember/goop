@@ -34,11 +34,13 @@ const InternalStage = ({ children }) => {
     <>
       <StylishStage>
         <AppContext.Consumer>
-          {app => {
-            return (
-              <MagicElement app={app} children={children} />
-            )
-          }}
+          {
+            app => {
+              return (
+                <MagicElement app={app} children={children} />
+              )
+            }
+          }
         </AppContext.Consumer>
       </StylishStage>
     </>
