@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Text, Sprite } from 'react-pixi-fiber'
 import { ResponsiveStage } from './ResponsiveStage'
 import { useApp } from './hooks/useApp'
@@ -9,18 +9,16 @@ const GREEN = 0x00ff00
 const BLUE = 0x0000ff
 
 const Item = props => {
-  const [tint, setTint] = useState(0xff00ff)
-  const [scale, setScale] = useState(10)
-
+  const [tint, setTint] = useState(BLUE)
+  const [scale, setScale] = useState([10])
   const [rotation, setRotation] = useState(0)
-
+  
   const app = useApp()
 
   useEffect(()=>{
     console.log({ app })
     
     const tick = time => {
-      // console.log({ time })
       setRotation(existing=>{
         return existing + 0.01 * time
       })
@@ -37,15 +35,15 @@ const Item = props => {
     <Sprite 
       pointerdown={()=>{
         setTint(RED);
-        setScale(10)
+        setScale([10])
       }} 
       pointerup={()=>{
         setTint(GREEN)
-        setScale(5)
+        setScale([5])
       }}
       pointerupoutside={()=>{
         setTint(GREEN)
-        setScale(5)
+        setScale([5])
       }}
       anchor={0.5}
       scale={scale}

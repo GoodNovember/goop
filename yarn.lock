@@ -5592,6 +5592,11 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
+pixi-layers@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/pixi-layers/-/pixi-layers-0.3.1.tgz#44457e14dad7b341a48b7b92c8bb3bb9c88d3338"
+  integrity sha512-sLqkg4xnlKKjKceTgyNEvb2Fh7A1OmbsZRTHVnnsqMmhkVLVUgRNZX6ZflTne0pgGOal6EXp1bmns4geXZsY7A==
+
 pixi.js@^5.3.3:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-5.3.3.tgz#6e326a52542f4acd97ea3f8593cb0aeae502df9a"
